@@ -1,0 +1,1263 @@
+@import url("https://fonts.googleapis.com/css2?family=popins");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    font-family:'Arial', san serif;
+}
+html{
+    scroll-behavior: smooth;
+    user-select: none;
+    content: hidden;
+    scrollbar-color: crimson;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    justify-content: right;
+    transition: .2s;
+}
+section{
+    padding: 100px 0;
+}
+
+
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+
+
+
+/* home section styling */
+.home{
+    display: flex;
+    background-image:url("profile_banner.webp");
+    height: 100vh;
+    color: #fff;
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+  width: 100%;
+  display: flex;
+}
+.home .max-width .row{
+  margin-right: 0;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+}
+
+
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height:10vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: url('./cursor.png');
+}
+
+
+
+
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.about, .services, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content,
+.services .serv-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: wheat;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height:8%;
+    width: 100%;
+    padding: 20px 60px;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    transition: transparent;
+    border-bottom: #000;
+}
+.header .ManojEmporium {
+    font-size: 45em;
+    background-color: wheat;
+    user-select:auto;
+    color: wheat;
+}
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
+ .navigation .btnLogin-popup
+ {
+     width: 130px;
+     height: 40px;
+     background: transparent;
+     border: 2px solid wheat;
+     outline: none;
+     border-radius: 6px;
+     cursor: pointer;
+     font-size: 1.1em;
+     color: wheat;
+     font-weight: 500;
+     margin-left: 40px;
+     transition: .5s;
+     text-align: center;
+ }
+.navigation .btnLogin-popup:hover{
+    background: white;
+    color: black;
+    font-size: 1em;
+    border: 3px solid black;
+    font-size: 1.3em;
+}
+
+ .navigation{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navigation.sticky{
+    padding: 15px 0;
+    background: crimson;
+}
+.navigation .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: -230px;
+}
+.navigation .logo a{
+    color: wheat;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navigation .logo a span{
+    color:white;
+    transition: all 0.3s ease;
+}
+.navigation.sticky .logo a span{
+    color: #fff;
+}
+.menu{
+    margin-left: 650px;
+}
+.navigation .menu li{
+    list-style-type: style none;;
+    display: inline-block;
+}
+.navigation .menu li a{
+    display: block;
+    color: wheat;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+}
+.navigation .menu li a:hover{
+    color:white;
+}
+.navigation.sticky .menu li a:hover{
+    color: #fff;
+}
+
+/* menu btn styling */
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.wrapper {
+position: absolute;
+margin-right: -650px;
+width: 400px;
+height: 440px;
+background: transparent;
+border: 3px solid rgba(136, 88, 88, 0.5);
+border-radius: 40px;
+backdrop-filter:blur(18px);
+box-shadow: 0 0 30px rgba(0,0,0,.5);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1;
+}
+
+.wrapper .form-box {
+width: 100%;
+padding: 40px;
+
+}
+
+.form-box h2 {
+font-size: 2em;
+color: wheat;
+text-align: center;
+top: 5px;
+}
+.input-box{
+position: relative;
+width: 300px;
+height: 50px;
+border-bottom: 3px solid wheat;
+margin: 30px 8px;
+}
+.input-box label{
+position: absolute;
+top: 35px;
+left: 5px;
+transform: translateY(-50%);
+font-size: 1em;
+color: wheat;
+font-weight: 500;
+pointer-events: none;
+transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+top: 5px;
+}
+.input-box input{
+width: 100%;
+height: 100%;
+background: transparent;
+border: none;
+outline: none;
+font-size: 1em;
+color: whitesmoke;
+font-weight: 600;
+padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+position: absolute;
+right: 5px;
+font-size:1.2em;
+color: wheat;
+line-height: 57px;
+
+}
+
+.remember-forgot{
+font-size: .9em;
+color: wheat;
+accent-color: wheat;
+font-weight: 500;
+width: 100%;
+height: 50px;
+margin: -15px 0 15px;
+display: flex;
+justify-content: space-between;
+
+}
+.remember-forgot label input{
+accent-color:rgb(214, 61, 92);
+margin-right: 3px;
+
+}
+.remember-forgot a {
+color: wheat;
+text-decoration: none;
+
+}
+.remember-forgot a:hover{
+text-decoration: underline;
+color:white;
+
+}
+
+/* =========================================================== */
+/* .wrapper {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 3px solid rgba(136, 88, 88, 0.5);
+    border-radius: 40px;
+    backdrop-filter:blur(18px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.wrapper .inputs{
+        margin-top: 250px;
+    }
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+    margin-top: -145px;
+    
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+    top: 5px;
+}
+.input-box{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    border-bottom: 3px solid #162938;
+    margin: 30px 8px;
+}
+.input-box label{
+    position: absolute;
+    top: 35px;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: 5px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 5px;
+    font-size:1.2em;
+    color: #162938;
+    line-height: 57px;
+    
+}
+
+.remember-forgot{
+    font-size: .9em;
+    color: #23313cba;;
+    font-weight: 500;
+    width: 100%;
+    height: 50px;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.remember-forgot label input{
+    accent-color:rgb(34, 68, 80);
+    margin-right: 3px;
+    margin-top: 320px;
+    
+}
+.remember-forgot a {
+    color: #162938;
+    text-decoration: none;
+    
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+    
+}
+
+.checkbox{
+    margin-top: 50px;
+} 
+.Remember{
+    margin:250px;
+    padding-left: 2px;
+} 
+.forgot{
+    margin-left: 183px;
+} */
+.btn{
+
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 2px solid wheat;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: wheat;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn:hover{
+    background: crimson;
+    color: wheat;
+    font-size: 1em;
+    border: 2px solid wheat;
+}
+
+
+
+.login-register {
+    font-size: .9em;
+    color:crimson;
+    font-weight: 500;
+    width: 350px;
+    height: 5px;
+    margin: inline-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-register a {
+    color: wheat;
+    border-radius: 2px;
+    outline-color: wheat;
+    border: 50px;
+    text-decoration: none;
+    font-weight: 750;
+}
+
+.login-register a:hover{
+    text-decoration: underline;
+    color:white;
+    
+}
+.wrap{
+    display:inline-flex;
+    background: transparent;
+    /* backdrop-filter:blur(18px); */
+    /* margin-top: 10px; */
+    /* margin-left: 15px; */
+}
+
+.wrap .icon{
+    margin-top: 560px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    position: relative;
+    z-index:1;
+  }
+
+  .wrap .icon span{
+    position:fixed;
+    z-index:0;
+    height: 40px;
+    width: 40px;
+    display:block;
+    background: rgba(219, 221, 223, 0.515);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    border-radius:50%;
+    text-align:center;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .wrap .icon span i{
+    font-size:25px;
+    line-height:40px;
+  }
+
+  .wrap .icon .tooltip{
+    position:relative;
+    top:0px;
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    color:white;
+    opacity:0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .wrap .icon:hover .tooltip{
+    opacity:1;
+    pointer-events: auto;
+    top:-70px;
+  }
+  .wrap .icon .tooltip:before{
+    position:absolute;
+    content:"";
+    height:15px;
+    width:15px;
+    bottom:-8px;
+    left:50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  .wrap.icon:hover span,
+  .wrap .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+  }
+  .wrap .icon:hover span{
+    color: #ffffff;
+  }
+
+.wrap .facebook:hover span,
+.wrap .facebook:hover .tooltip,
+.wrap .facebook:hover .tooltip:before{
+  background: #075997;
+  content: hidden;
+  color: #f3f1f1;
+}
+.wrap .twitter:hover span,
+.wrap .twitter:hover .tooltip,
+.wrap .twitter:hover .tooltip:before{
+  background:#0091ff;
+}
+.wrap .github:hover span,
+.wrap .github:hover .tooltip,
+.wrap .github:hover .tooltip:before{
+  background:#292929;
+}
+.wrap .youtube:hover span,
+.wrap .youtube:hover .tooltip,
+.wrap .youtube:hover .tooltip:before{
+  background:#cb2020;
+
+
+}
+/*.toggle {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    height:50px;
+    border: #000;
+    border-radius: 55px;
+    transition: .2s;
+}
+
+.toggle i {
+    width: 30%;
+    line-height: 55px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 3;
+}
+
+.toggle .ball {
+    position: absolute;
+    width: 59px;
+    height: 50px;
+    margin: 1.9px;
+    border-radius: 550%;
+    transition: .3s ease-in ;
+}*/
+
+/*
+    -- Light Mode --
+*/
+
+/*.bright {
+    background: #fafafa;
+}
+
+.bright .toggle {
+    background: transparent;
+}
+
+.bright .toggle .bx-sun {
+    color: #fafafa;
+}
+
+.bright .toggle .bxs-moon {
+    color: #151d2a;
+}
+
+.bright .toggle .ball {
+    background: #151d2a;
+    transform: translateX(65PX);
+}*/
+
+
+/*
+    -- Dark Mode --
+*/
+
+/*.dark {
+    background: #151d2a;
+}
+
+.dark .toggle {
+    background: #0e0e0e;
+    border: white;
+}
+
+.dark .toggle .bx-sun {
+    color: #fafafa;
+}
+
+.dark .toggle .bxs-moon {
+    color: #151d2a;
+}
+
+.dark .toggle .ball {
+    background: #fafafa;
+    transform: translateX(65px);
+}*/
+
+
+
+
+
+
+
+
+
+
+
+/* contact section styling */
+.contact .title::after{
+    content: "get in touch";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area{
+  display: flex;
+  align-items: center;
+}
+.right form .button-area button{
+  color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: crimson;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover{
+  color: crimson;
+  background: none;
+}
+
+
+
+
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+    .services .serv-content .card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text{
+        font-size: 19px;
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .right form .error-box{
+       width: 150px;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 40px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+/* ==========================================================chatbot=========================================== */
+ /* Import Google font - Poppins */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+ }
+ body {
+   background: #E3F2FD;
+ }
+ .chatbot-toggler {
+   position: fixed;
+   bottom: 30px;
+   right: 35px;
+   outline: none;
+   border: none;
+   height: 50px;
+   width: 50px;
+   display: flex;
+   cursor: pointer;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   background: crimson;
+   transition: all 0.2s ease;
+ }
+ body.show-chatbot .chatbot-toggler {
+   transform: rotate(90deg);
+ }
+ .chatbot-toggler span {
+   color: #fff;
+   position: absolute;
+ }
+ .chatbot-toggler span:last-child,
+ body.show-chatbot .chatbot-toggler span:first-child  {
+   opacity: 0;
+ }
+ body.show-chatbot .chatbot-toggler span:last-child {
+   opacity: 1;
+ }
+ .chatbot {
+   position: fixed;
+   right: 35px;
+   bottom: 90px;
+   width: 420px;
+   background: #fff;
+   border-radius: 15px;
+   overflow: hidden;
+   opacity: 0;
+   pointer-events: none;
+   transform: scale(0.5);
+   transform-origin: bottom right;
+   box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+               0 32px 64px -48px rgba(0,0,0,0.5);
+   transition: all 0.1s ease;
+ }
+ body.show-chatbot .chatbot {
+   opacity: 1;
+   pointer-events: auto;
+   transform: scale(1);
+ }
+ .chatbot header {
+   padding: 16px 0;
+   position: relative;
+   text-align: center;
+   color: #fff;
+   background: crimson;
+   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+ }
+ .chatbot header span {
+   position: absolute;
+   right: 15px;
+   top: 50%;
+   display: none;
+   cursor: pointer;
+   transform: translateY(-50%);
+ }
+ header h2 {
+   font-size: 1.4rem;
+ }
+ .chatbot .chatbox {
+   overflow-y: auto;
+   height: 510px;
+   padding: 30px 20px 100px;
+ }
+ .chatbot :where(.chatbox, textarea)::-webkit-scrollbar {
+   width: 6px;
+ }
+ .chatbot :where(.chatbox, textarea)::-webkit-scrollbar-track {
+   background: #fff;
+   border-radius: 25px;
+ }
+ .chatbot :where(.chatbox, textarea)::-webkit-scrollbar-thumb {
+   background: #ccc;
+   border-radius: 25px;
+ }
+ .chatbox .chat {
+   display: flex;
+   list-style: none;
+ }
+ .chatbox .outgoing {
+   margin: 20px 0;
+   justify-content: flex-end;
+ }
+ .chatbox .incoming span {
+   width: 32px;
+   height: 32px;
+   color: #fff;
+   cursor: default;
+   text-align: center;
+   line-height: 32px;
+   align-self: flex-end;
+   background: crimson;
+   border-radius: 4px;
+   margin: 0 10px 7px 0;
+ }
+ .chatbox .chat p {
+   white-space: pre-wrap;
+   padding: 12px 16px;
+   border-radius: 10px 10px 0 10px;
+   max-width: 75%;
+   color: #fff;
+   font-size: 0.95rem;
+   background: crimson;
+ }
+ .chatbox .incoming p {
+   border-radius: 10px 10px 10px 0;
+ }
+ .chatbox .chat p.error {
+   color: #721c24;
+   background: #f8d7da;
+ }
+ .chatbox .incoming p {
+   color: #000;
+   background: #f2f2f2;
+ }
+ .chatbot .chat-input {
+   display: flex;
+   gap: 5px;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   background: #fff;
+   padding: 3px 20px;
+   border-top: 1px solid #ddd;
+ }
+ .chat-input textarea {
+   height: 55px;
+   width: 100%;
+   border: none;
+   outline: none;
+   resize: none;
+   max-height: 180px;
+   padding: 15px 15px 15px 0;
+   font-size: 0.95rem;
+ }
+ .chat-input span {
+   align-self: flex-end;
+   color: crimson;
+   cursor: pointer;
+   height: 55px;
+   display: flex;
+   align-items: center;
+   visibility: hidden;
+   font-size: 1.35rem;
+ }
+ .chat-input textarea:valid ~ span {
+   visibility: visible;
+ }
+ 
+ @media (max-width: 490px) {
+   .chatbot-toggler {
+     right: 20px;
+     bottom: 20px;
+   }
+   .chatbot {
+     right: 0;
+     bottom: 0;
+     height: 100%;
+     border-radius: 0;
+     width: 100%;
+   }
+   .chatbot .chatbox {
+     height: 90%;
+     padding: 25px 15px 100px;
+   }
+   .chatbot .chat-input {
+     padding: 5px 15px;
+   }
+   .chatbot header span {
+     display: block;
+   }
+ }
